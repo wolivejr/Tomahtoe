@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tomahtoe.MainPage">
+
+
+    <StackLayout Orientation="Vertical" Padding="10" Margin="10" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+
+        <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Padding="10" Margin="10" BackgroundColor="DarkGray" IsClippedToBounds="True">
+            
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="8*" />
+                <RowDefinition Height="1*" />
+            </Grid.RowDefinitions>
+            
+            <Grid.ColumnDefinitions >
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            <Label x:Name="CountdownOutput"
+                   Text="00:00:00"
+                   Grid.Row="0"
+                   HorizontalTextAlignment="Center"
+                   FontSize="52"/>
+
+            <Button x:Name="StartTimerButton"
+                    Text="Start Timer"
+                    Grid.Row="2"
+                    FontSize="28"
+                    Clicked="StartTimerButton_Clicked"/>
+        
+        </Grid>
+
+
+    </StackLayout>
+
+</ContentPage>
